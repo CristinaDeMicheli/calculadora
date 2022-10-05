@@ -4,13 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/main.js"></script>
 	<title>Calculadora</title>
 </head>
 <body>
 	<div class="contendor-calculadora">
 		<div class="calculadora">
-			<div class="pantalla">
-				<p>La Respuesta es ...</p>
+			<div>
+				
+                    <input id="displayBox" type="text" readonly class="pantalla">
+                
+            
+
 			</div>
 			<div class="contenedor-teclas">
 				<button class="boton">(</button>
@@ -25,26 +30,32 @@
 				<button class="boton">X°3</button>
 				<button class="boton">°Raiz3</button>
 				<button class="boton">X°n</button>
-				<button class="boton">1</button>
-				<button class="boton">2</button>
-				<button class="boton">3</button>
+				<button class="boton" type="button" id="bOne" onclick="calculadora.writeToDisplay('1')">1</button>
+				<button class="boton" type="button" id="bTwo" onclick="calculadora.writeToDisplay('2')">2</button>
+				<button class="boton" type="button" id="bThree" onclick="calculadora.writeToDisplay('3')">3</button>
 				<button class="boton">/</button>
 				<button class="boton">%</button>
 				<button class="boton">Ln</button>
-				<button class="boton">4</button>
-				<button class="boton">5</button>
-				<button class="boton">6</button>
+                <button class="boton" type="button" id="bFour" onclick="calculadora.writeToDisplay('4')">4</button>
+                    
+
+
+				<button class="boton" type="button" id="bFive" onclick="calculadora.writeToDisplay('5')">5</button>
+				<button class="boton" type="button" id="bSix" onclick="calculadora.writeToDisplay('6')">6</button>
 				<button class="boton">*</button>
 				<button class="boton">Log</button>
 				<button class="boton">e</button>
-				<button class="boton">7</button>
-				<button class="boton">8</button>
-				<button class="boton">9</button>
+				<button class="boton" type="button" id="bSeven" onclick="calculadora.writeToDisplay('7')">7</button>
+				<button class="boton" type="button" id="bEight" onclick="calculadora.writeToDisplay('8')">8</button>
+				<button class="boton" type="button" id="bNine" onclick="calculadora.writeToDisplay('9')">9</button>
 				<button class="boton">-</button>
-				<button class="boton">AC</button>
+                <button class="boton" id="bClearDisplayCE" type="button" onclick="calculadora.clearDisplay()">CE</button>
+                  
+
+
 				<button class="igual">=</button>
 				<button class="boton">.</button>
-				<button class="boton">0</button>
+				<button class="boton" type="button" id="bZero" onclick="calculadora.writeToDisplay('0')">0</button>
 				<button class="boton">Pi</button>
 				<button class="boton">+</button>
 				<button class="boton">MR</button>
