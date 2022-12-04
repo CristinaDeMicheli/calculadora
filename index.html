@@ -18,33 +18,33 @@
 
 			</div>
 			<div class="contenedor-teclas">
-				<button class="boton">(</button>
-				<button class="boton">)</button>
-				<button class="boton">X!</button>
-				<button class="boton">X°</button>
-				<button class="boton">Raiz</button>
-				<button class="boton">°Raiz</button>
-				<button class="boton">Sin</button>
-				<button class="boton">Cos</button>
-				<button class="boton">tg</button>
-				<button class="boton">X°3</button>
-				<button class="boton">°Raiz3</button>
-				<button class="boton">X°n</button>
+				<button class="boton" onclick="calculadora.writeOperatorToDisplay('(')">(</button>
+				<button class="boton" onclick="calculadora.writeOperatorToDisplay(')')">)</button>
+				<button class="boton" id="bNthPowerOfTenOr" onclick="calculadora.nthTenPower()">10 elev x</button>
+				<button class="boton" id="bInverseNumber" onclick="calculadora.inverseNumber()">X elv -1</button>
+				<button class="boton" id="bClearDisplayC" onclick="calculadora.clearDisplay()">C</button>
+				<button class="boton" id="bDelete" onclick="calculadora.eraseLastInput()">DEL</button>
+				<button class="boton" id="bSine" onclick="calculadora.writeMathFunction('sin(')">Sin</button>
+				<button class="boton" id="bCosine" onclick="calculadora.writeMathFunction('cos(')">Cos</button>
+				<button class="boton" id="bTangent" onclick="calculadora.writeMathFunction('tan(')">tan</button>
+				<button class="boton" id="bCube" onclick="calculadora.cube()">X°3</button>
+				<button class="boton" onclick="calculadora.writeOperatorToDisplay('-')">(-)</button>
+				<button class="boton" id="bSquare" onclick="calculadora.square()">X°2</button>
 				<button class="boton" type="button" id="bOne" onclick="calculadora.writeToDisplay('1')">1</button>
 				<button class="boton" type="button" id="bTwo" onclick="calculadora.writeToDisplay('2')">2</button>
 				<button class="boton" type="button" id="bThree" onclick="calculadora.writeToDisplay('3')">3</button>
-				<button class="boton">/</button>
-				<button class="boton">%</button>
-				<button class="boton">Ln</button>
+				<button class="boton" id="bDivide" onclick="calculadora.writeOperatorToDisplay('/')">/</button>
+				<button class="boton" onclick="calculadora.calculateFactorial()">n!</button>
+				<button class="boton" id="bNaturalLog" onclick="calculadora.writeMathFunction('ln(')">Ln</button>
                 <button class="boton" type="button" id="bFour" onclick="calculadora.writeToDisplay('4')">4</button>
                     
 
 
 				<button class="boton" type="button" id="bFive" onclick="calculadora.writeToDisplay('5')">5</button>
 				<button class="boton" type="button" id="bSix" onclick="calculadora.writeToDisplay('6')">6</button>
-				<button class="boton">*</button>
-				<button class="boton">Log</button>
-				<button class="boton">e</button>
+				<button class="boton" id="bMultiply" onclick="calculadora.writeOperatorToDisplay('*')">*</button>
+				<button class="boton" id="bLogOr" onclick="calculadora.writeMathFunction('log(')">Log</button>
+				<button class="boton" id="bPercentage" onclick="calculadora.writeMathFunction('e')">e</button>
 				<button class="boton" type="button" id="bSeven" onclick="calculadora.writeToDisplay('7')">7</button>
 				<button class="boton" type="button" id="bEight" onclick="calculadora.writeToDisplay('8')">8</button>
 				<button class="boton" type="button" id="bNine" onclick="calculadora.writeToDisplay('9')">9</button>
@@ -53,12 +53,12 @@
                   
 
 
-				<button class="igual">=</button>
-				<button class="boton">.</button>
+				<button class="igual" onclick="calculadora.solveOperation()">=</button>
+				<button class="boton" onclick="calculadora.writeToDisplay('.')">.</button>
 				<button class="boton" type="button" id="bZero" onclick="calculadora.writeToDisplay('0')">0</button>
-				<button class="boton">Pi</button>
-				<button class="boton">+</button>
-				<button class="boton">MR</button>
+				<button class="boton" id="bPi" onclick="calculadora.writeMathFunction('PI')">Pi</button>
+				<button class="boton" onclick="calculadora.writeOperatorToDisplay('+')">+</button>
+				<button class="boton" id="bMRead" onclick="calculadora.readMemory()">MR</button>
 			</div>
 		</div>
 	</div>
